@@ -56,7 +56,7 @@ public class Fish : MonoBehaviour
         transform.position += m_Direction * Time.fixedDeltaTime * m_Speed;
 
         if(m_Direction.x > 0.1f)
-            transform.DORotate(new Vector3(0,90,0), 0.3f);
+            transform.DORotate(new Vector3(0, 90, 0), 0.3f);
         else
             transform.DORotate(new Vector3(0, -90, 0), 0.3f);
     }

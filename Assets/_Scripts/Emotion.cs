@@ -8,15 +8,17 @@ public enum Emotions
     Love,
     Hate,
     Confident,
-    Fear
+    Fear,
+    Silly,
+    Serious
 }
 
 [CreateAssetMenu(fileName = "New Emotion", menuName = "Emotions")]
 public class Emotion : ScriptableObject
 {
     public Emotions mainEmotion;
+    public Sprite sprite;
 
     public List<Emotions> oppositeEmotions;
 
-    public Sprite sprite;
 }

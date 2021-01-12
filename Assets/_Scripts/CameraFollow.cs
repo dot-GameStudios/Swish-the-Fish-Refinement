@@ -6,7 +6,7 @@ public class CameraFollow : MonoBehaviour
 
     [SerializeField] float m_CameraSpeed = 1;          
     [SerializeField] float m_CameraZPosition = -10;     //The camera z position offset
-
+    [SerializeField] float m_PlayerClampFactor;         //Use this to determine the distance from the areaBoundaries you want to clamp the player in
     // Start is called before the first frame update
     void Start()
     {
@@ -33,14 +33,14 @@ public class CameraFollow : MonoBehaviour
         transform.position = newPosition;
     }
 
-    //Clamps the targets position in the screen;
+    //Clamps the targets position in the *Area Boundaries;
     void ClampTargetPosition(Transform target)
     {
         Vector3 clampPosition = Camera.main.WorldToViewportPoint(transform.position);
 
-        clampPosition.x = Mathf.Clamp01(clampPosition.x);
-        clampPosition.y = Mathf.Clamp01(clampPosition.y);
+        clampPosition.x = Mathf.Clamp(target.position.x, GameManager.Instance.AreaBoundary().xMin * m_PlayerClampFactor, GameManager.Instance.AreaBoundary().xMax * m_PlayerClampFactor);
+        clampPosition.y = Mathf.Clamp(target.position.y, GameManager.Instance.AreaBoundary().yMin * m_PlayerClampFactor, GameManager.Instance.AreaBoundary().yMax * m_PlayerClampFactor);
 
-        target.position = Camera.main.ViewportToWorldPoint(clampPosition);
+        target.position = clampPosition;
     }
 }

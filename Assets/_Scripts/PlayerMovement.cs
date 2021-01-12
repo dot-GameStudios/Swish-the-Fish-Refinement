@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using DG.Tweening;
+using System.Diagnostics;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -49,7 +50,7 @@ public class PlayerMovement : MonoBehaviour
         Vector3 newPosition = Camera.main.ScreenToWorldPoint(m_MouseInput); 
         newPosition.z = 0;
         transform.position = newPosition;
-
+        
         //Based off the mouse delta, rotate the object to the correct direction
         if (m_MouseDelta.x > 0.1f)
             transform.DORotate(new Vector3(0, 90, 0), m_RotateDuration);
@@ -70,7 +71,6 @@ public class PlayerMovement : MonoBehaviour
 
         if (Physics.Raycast(screenToWorld, Vector3.forward, out RaycastHit hit, 50))
         {
-            Debug.Log(hit.collider.tag);
             if (hit.transform.CompareTag("Player"))
                 m_Moveable = true;
         }

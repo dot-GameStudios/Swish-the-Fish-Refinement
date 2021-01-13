@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3046987460249349351}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -34, y: -14.627145, z: 0}
+  m_LocalPosition: {x: 34, y: -17.998753, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 5819460296691041493}
@@ -51,9 +51,9 @@ MonoBehaviour:
   m_SpriteRenderer: {fileID: 1881144439652311418}
   m_EmotionText: {fileID: 6659961958940314721}
   m_Direction: {x: 0, y: 0, z: 0}
-  m_CurrentWaypoint: {x: -7.852722, y: -15.814868, z: 0}
-  m_Speed: 3.149275
-  m_ThreatDistance: 6.2
+  m_CurrentWaypoint: {x: 31.14949, y: 5.8723407, z: 0}
+  m_Speed: 7.895511
+  m_ThreatDistance: 6.5
   m_Threat: {fileID: 0}
   m_Collider: {fileID: 4226991551314665281}
   m_Mesh: {fileID: 6689930738168285168}

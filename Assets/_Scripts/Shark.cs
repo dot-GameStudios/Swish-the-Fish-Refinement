@@ -49,6 +49,11 @@ public class Shark : MonoBehaviour
     }
     #endregion
 
+    public Emotion GetEmotion()
+    {
+        return m_Emotion;
+    }
+
     private void GetAndSetEmotion()
     {
         m_Emotion = EmotionManager.Instance.GetRandomEmotion();
@@ -58,6 +63,7 @@ public class Shark : MonoBehaviour
             m_EmotionText.text = m_Emotion.name;
             m_EmotionSprite.sprite = m_Emotion.sprite;
             StartCoroutine(DelayFadeOut());
+            FishManager.Instance.m_TargetEmotion = m_Emotion;
         }
     }
 

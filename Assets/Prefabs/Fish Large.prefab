@@ -104,7 +104,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Happy
+  m_text: Hate
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -246,7 +246,7 @@ SpriteRenderer:
   m_SortingLayerID: -2077035829
   m_SortingLayer: 2
   m_SortingOrder: 1
-  m_Sprite: {fileID: -7024285200594183470, guid: 9ac4fa58fbf7fbe4f8b062233eb0d201,
+  m_Sprite: {fileID: -5031243441802642203, guid: 9ac4fa58fbf7fbe4f8b062233eb0d201,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -364,7 +364,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6476795258353685538}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -34, y: -0.96349525, z: 0}
+  m_LocalPosition: {x: -34, y: 7.0985217, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2551782070139632656}
@@ -385,13 +385,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a784329bbb2e8444b81458ee8a0ff24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Emotion: {fileID: 11400000, guid: 1d76fe8553acb14449ee103c15f4d1a1, type: 2}
+  m_Emotion: {fileID: 11400000, guid: 59b61cc208b056e40bf8de31a66d5723, type: 2}
   m_SpriteRenderer: {fileID: 7615598986976369087}
   m_EmotionText: {fileID: 3442949236786787492}
   m_Direction: {x: 0, y: 0, z: 0}
-  m_CurrentWaypoint: {x: -14.719146, y: -15.463158, z: 0}
-  m_Speed: 2.789967
-  m_ThreatDistance: 6.2
+  m_CurrentWaypoint: {x: 5.838032, y: 10.032143, z: 0}
+  m_Speed: 4.6015334
+  m_ThreatDistance: 6.8
   m_Threat: {fileID: 0}
   m_Collider: {fileID: 5260884279005570948}
   m_Mesh: {fileID: 1063490094441373314}

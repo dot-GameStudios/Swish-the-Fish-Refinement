@@ -82,7 +82,14 @@ public class Fish : MonoBehaviour
     public Emotion GetEmotion()
     {
         return m_Emotion;
-    }   
+    }
+
+    public void SetEmotion(Emotion newEmotion)
+    {
+        m_Emotion = newEmotion;
+        m_SpriteRenderer.sprite = newEmotion.sprite;
+        m_EmotionText.text = newEmotion.name;
+    }
 
     IEnumerator DelayDeath()
     {

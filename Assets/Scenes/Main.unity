@@ -365,10 +365,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 9118045b7493d7f46bc319dfc1c72f42, type: 2}
   - {fileID: 11400000, guid: ac1e7080220042d43b8af7c6d83c9f68, type: 2}
   - {fileID: 11400000, guid: 59b61cc208b056e40bf8de31a66d5723, type: 2}
-  - {fileID: 11400000, guid: 0ee358213b0bac04ab69d61451d89a20, type: 2}
-  - {fileID: 11400000, guid: eabb52fc88eb21f489ffab83f23553f1, type: 2}
-  - {fileID: 11400000, guid: 53166573eea7e98438c408f57d9a5384, type: 2}
-  - {fileID: 11400000, guid: 372f87672d6c01343be631ef580e86ee, type: 2}
 --- !u!4 &384771058
 Transform:
   m_ObjectHideFlags: 0
@@ -1974,7 +1970,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_FishType:
   - {fileID: -2284828828468709729, guid: 545fe8a5e2b70334bb9263fe3ddc8df4, type: 3}
-  m_StartingFish: 20
+  - {fileID: 2875841338159074930, guid: c118e9bd8c502e944a88f0a3383aff6d, type: 3}
+  - {fileID: 1432575975554322010, guid: b8633e42dbddd32429d195b7d482b93c, type: 3}
+  m_StartingFish: 30
   m_FishCount: 0
   m_FishList: []
   m_MinFishSpeed: 2
